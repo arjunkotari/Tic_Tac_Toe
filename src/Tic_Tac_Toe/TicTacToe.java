@@ -21,8 +21,5 @@ public class TicTacToe {
 		 * calling createBoard method in main method
 		 */
 		char[] board = createBoard();
-		for(int i:board) {
-			System.out.print(i+" ");
-		}
 	}
 }
