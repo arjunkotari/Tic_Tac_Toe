@@ -25,6 +25,9 @@ public class TicTacToe {
 		 * calling createBoard method() in main method()
 		 */
 		char[] board = createBoard();
+		//Displaying board
+		showBoard();
+		//This method can allow the user to insert character
 		allowPlayer();
 		
 	}
@@ -37,4 +40,20 @@ public class TicTacToe {
 
 		return playerMove;
 	}
+	/*
+	 * creating method to display Tic Tac Toe board
+	 */
+	public static void showBoard() {
+	char[][] gameBoard= {{' ','|',' ','|',' '},
+			{'-','+','-','+','-'},
+			{' ','|',' ','|',' '},
+			{'-','+','-','+','-'},
+			{' ','|',' ','|',' '}};
+	for(char[] row:gameBoard) {
+		for(char display:row) {
+			System.out.print(display);
+		}
+		System.out.println();				
+	}		
+}
 }
